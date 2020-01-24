@@ -1,7 +1,6 @@
 {
   "name": "task-manager",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "env-cmd ./config/dev.env node src/index.js",
@@ -22,5 +21,15 @@
     "nodemon": "^2.0.2",
     "sharp": "^0.24.0",
     "validator": "^12.1.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ragulthangaraju/task-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ragulthangaraju/task-app/issues"
+  },
+  "homepage": "https://github.com/ragulthangaraju/task-app#readme",
+  "description": ""
 }

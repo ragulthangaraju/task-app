@@ -1,11 +1,11 @@
-const express = require('express')
+const express   = require('express')
 const userModel = require('../model/userModel')
 const taskModel = require('../model/taskModel')
 const emailSend = require('../email/accountMail')
-const auth = require('../middleware/auth')
-const multer = require('multer')
-const sharp = require('sharp')
-const router = new express.Router()
+const auth      = require('../middleware/auth')
+const multer    = require('multer')
+const sharp     = require('sharp')
+const router    = new express.Router()
 
 const upload = multer({
     // dest: 'avatar',
@@ -85,8 +85,8 @@ router.get('/users/me', auth, async (req, res) => {
 })
 
 router.get('/users/:id/:name', (req, res) => {
-    const _id = req.params.id
-    const name = req.params.name
+    const { _id, name} = req.params
+    // const name = req.params.name
 
     // userModel.findById(_id).then((user) => {
     //     if (!user) {

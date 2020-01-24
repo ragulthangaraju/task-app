@@ -1,7 +1,7 @@
-const mongoose = require('mongoose')
+const mongoose  = require('mongoose')
 const validator = require('validator')
-const bcryptjs = require('bcryptjs')
-const jwt = require('jsonwebtoken')
+const bcryptjs  = require('bcryptjs')
+const jwt       = require('jsonwebtoken')
 
 const userSchema = new mongoose.Schema({
     name:{
@@ -52,7 +52,7 @@ userSchema.methods.generatingToken = async function () {
 
     user.tokens = user.tokens.concat({ token })
     await user.save()
-    
+
     return token
 }
 
@@ -62,7 +62,7 @@ userSchema.methods.toJSON = function(){
     delete userObject.password
     delete userObject.tokens
     delete userObject.avatar
-    
+
     return userObject
 }
 

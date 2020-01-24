@@ -1,6 +1,8 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://127.0.0.1:27017/task-manager-api', {
+// mongodb://127.0.0.1:27017/task-manager-api
+// mongodb+srv://taskapp:3n3yffb39627@cluster0-wk7gk.mongodb.net/test?retryWrites=true&w=majority
+mongoose.connect('mongodb+srv://taskapp:3n3yffb39627@cluster0-wk7gk.mongodb.net/test?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true
